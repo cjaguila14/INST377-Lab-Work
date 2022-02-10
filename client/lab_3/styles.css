@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.top-bar {
+    background-color: rgba(0,139, 139,0.8);
+    display: flex;
+    justify-content: flex-start;
+}
+
 .menu-container {
   color: #fff;
   background-color: #5995da; /* Blue */
@@ -59,12 +65,12 @@
 }
 
 .first-item {
-    order: 1;
-  }
-  
-  .last-item {
-    order: -1;
-  }
+  order: 1;
+}
+
+.last-item {
+  order: -1;
+}
 
 .photo-grid-item {
   border: 1px solid #fff;
@@ -99,3 +105,13 @@
   align-self: flex-end;
   margin-bottom: 20px;
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+   
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+}
+
