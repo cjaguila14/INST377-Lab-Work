@@ -108,10 +108,7 @@
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-    .logo {
-        width: 500px;
-        
-    }
+   
 
 }
 
