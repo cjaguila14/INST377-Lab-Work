@@ -1,15 +1,23 @@
 let slidePosition = 0;
+const btnNext = document.querySelector('#carousel-button--next');
+const btnPrev = document.querySelector('#carousel-button--prev');
 const slides = document.querySelectorAll('.carousel-item');
 const totalSlides = slides.length;
 
-document
-  .querySelector('#carousel-button--next')
+btnNext
   .addEventListener('click', () => {
+    btnNext.style.backgroundColor = 'orange';
+    btnNext.style.borderColor = 'green';
+    btnPrev.style.backgroundColor = '#fff';
+    btnPrev.style.borderColor = 'black';
     moveToNextSlide();
   });
-document
-  .querySelector('#carousel-button--prev')
+btnPrev
   .addEventListener('click', () => {
+    btnPrev.style.backgroundColor = 'orange';
+    btnPrev.style.borderColor = 'green';
+    btnNext.style.backgroundColor = '#fff';
+    btnNext.style.borderColor = 'black';
     moveToPrevSlide();
   });
 
