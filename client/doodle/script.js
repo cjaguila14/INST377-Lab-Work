@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (doodlerBottomSpace > 200) {
       platforms.forEach((platform) => {
         platform.bottom -= 4;
-        const visual = platform.visual;
+        const { visual } = platform.visual;
         visual.style.bottom = `${platform.bottom}px`;
 
         if (platform.bottom < 10) {
