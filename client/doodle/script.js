@@ -74,7 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
     upTimerId = setInterval(() => {
       doodlerBottomSpace += 20;
       doodler.style.bottom = `${doodlerBottomSpace}px`;
-      if (doodlerBottomSpace > startPoint + 200) {
+      if ((doodlerBottomSpace > startPoint + 200)
+      || (doodlerBottomSpace > 610)) {
         fall();
       }
     }, 30);
