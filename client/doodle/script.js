@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let startPoint = 150;
   let doodlerBottomSpace = startPoint;
   let isGameOver = false;
-  const platformCount = 5;
-  const platforms = [];
+  let platformCount = 5;
+  let platforms = [];
   let upTimerId;
   let downTimerId;
   let isJumping = true;
