@@ -6,20 +6,27 @@ function getRandomIntInclusive(min, max) {
 }
 
 function restoArrayGenerator(arr) {
-  console.log('Fired Data Handler');
+  console.log('Fired Restaurant Array Generator');
   console.table(arr); // this is called "dot notation"
   const range = [...Array(15).keys()];
   const listItems = range.map((item, index) => {
     const randResto = getRandomIntInclusive(0, arr.length - 1);
     return arr[randResto];
   });
-
-  console.log(listItems);
   return listItems;
+}
 
-  // range.forEach((item) => {
-  // console.log('range item', item);
-  // });
+function generateHtmlList(collection) {
+  console.log('Fired HTML Generator');
+  console.log(collection);
+  const targetList = document.querySelector('.resto-list');
+  targetList.innerHTML = '';
+  collection.forEach((item) => {
+    const {name} = item;
+    const displayName = name.toLowerCase();
+    const injectThisItem = `<li>${displayName}</li>`;
+    targetList.innerHTML += injectThisItem;
+  });
 }
 
 async function mainEvent() { // the async keyword means we can make API requests
@@ -37,6 +44,7 @@ async function mainEvent() { // the async keyword means we can make API requests
       // arrayFromJson.data - we're accessing a key called 'data' on the returned object
       // it contains all 1,000 records we need
       const restoArray = restoArrayGenerator(arrayFromJson.data);
+      generateHtmlList(restoArray);
     });
   }
 }
