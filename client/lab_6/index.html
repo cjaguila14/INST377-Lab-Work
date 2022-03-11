@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Christopher Aguila Lab 5: HTML Forms, CSS Frameworks, HTTP Methods
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="box has-background-info">Christopher Aguila's Lab 5</div>
+        <div class="columns is-vcentered is-multiline">
+          <div class="column is-one-quarter is-offset-one-fifth">
+            <form class="box" id="main-form"  method="get">
+              <div class="field">
+                <label class="label">First Name</label>
+                <div class="control">
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="Johnny Appleseed"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Food Preference</label>
+                <div class="control">
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="What do you like?"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Veggie or Vegan?</label>
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="question" />
+                    Yes
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="question" />
+                    No
+                  </label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <button class="button is-danger">Submit</button>
+                </div>
+              </div>
+          </form>
+          </div>
+          <div class="column is-5">
+            <div class="box">
+              This is going to be something in a couple of Weeks.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
