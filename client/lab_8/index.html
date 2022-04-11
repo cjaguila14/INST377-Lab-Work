@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Christopher Aguila Lab 7: Filtering Data with A Typehead Form Input
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="box has-background-info">Christopher Aguila's Lab 8</div>
+        <div class="columns is-vcentered is-multiline">
+          <div class="column is-one-quarter is-offset-one-fifth">
+            <form class="box" id="main-form" method="get">
+              <div class="field">
+                <label class="label">Restaurant Name</label>
+                <div class="control">
+                  <input
+                    class="input"
+                    type="text"
+                    id="resto_name"
+                    placeholder="The Krusty Krab"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Zip Code</label>
+                <div class="control">
+                  <input
+                    class="input"
+                    type="text"
+                    id ="zipcode"
+                    placeholder="12345"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Veggie or Vegan?</label>
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="question" />
+                    Yes
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="question" />
+                    No
+                  </label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <button class="button is-danger submit-button" type="submit">
+                    Load List
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="column is-5">
+            <div class="box">
+              <h2><strong>Restaurant List</strong></h2>
+              <ul class="resto-list"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
